@@ -1,0 +1,8 @@
+# -- stackhawk configuration for test --
+app:
+  # -- An applicationId obtained from the StackHawk platform. --
+  applicationId: a4e8197e-06a3-49dc-9426-326b28ff75c6 # (required)
+  # -- The environment for the applicationId defined in the StackHawk platform. --
+  env: Development # (required)
+  # -- The url of your application to scan --
+  host: https://preprodapisix.omnenest.com/v1/watchlist/health-check # (required)
