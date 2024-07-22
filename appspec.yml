@@ -1,0 +1,9 @@
+version: 0.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "arn:aws:ecs:us-west-2:986672551393:task-definition/aws-ecs-taskdefiniton-r4r-new-2026:1"
+        LoadBalancerInfo:
+          ContainerName: "nodeapp-container"
+          ContainerPort: 8080
