@@ -1,6 +1,6 @@
 [
     {
-        "name": "my-web-server",
-        "imageUri": "891377322463.dkr.ecr.us-west-2.amazonaws.com/my-docker-image:latest"
+        "name": "nodeapp-container",
+        "imageUri": "986672551393.dkr.ecr.us-west-2.amazonaws.com/aws-ecr-r4r-2026:latest"
     }
 ]
