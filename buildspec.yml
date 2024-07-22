@@ -5,9 +5,9 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Amazon ECR.......
-      - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 434605749312.dkr.ecr.ap-south-1.amazonaws.com
+      - aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 986672551393.dkr.ecr.us-west-2.amazonaws.com
       - # Replace with this to your repository URI
-      - REPOSITORY_URL=434605749312.dkr.ecr.ap-south-1.amazonaws.com/nodeapp
+      - REPOSITORY_URL=986672551393.dkr.ecr.us-west-2.amazonaws.com/aws-ecr-r4r-2026
       - IMAGE_TAG=build-$(echo $CODEBUILD_BUILD_NUMBER)
   build:
     commands:
@@ -30,3 +30,4 @@ phases:
       - cat imagedefinitions.json   
 artifacts:
     files: imagedefinitions.json
+    files: appspec.yml
